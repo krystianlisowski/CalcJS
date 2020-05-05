@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CalcJS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+        <div class="header">
+            <span>CalcJS</span>
+        </div>
+        <input type="text" class="result"  id="result" value="" disabled/>
+        <div class="buttons">
+            <button class="button button-action" value="%" onclick="insert('%')">%</button>
+            <button class="button button-action" value="sqrt" onclick="sqrt()">√</button>
+            <button class="button button-action" value="pow" onclick="pow()">x²</button>
+            <button class="button button-action" value="/" onclick="insert('/')">÷</button>
+
+            <button class="button button-number" value="1" onclick="insert('1')">1</button>
+            <button class="button button-number" value="2" onclick="insert('2')">2</button>
+            <button class="button button-number" value="3" onclick="insert('3')">3</button>
+            <button class="button button-action" value="*" onclick="insert('*')">X</button>
+
+            <button class="button button-number" value="4" onclick="insert('4')">4</button>
+            <button class="button button-number" value="5" onclick="insert('5')">5</button>
+            <button class="button button-number" value="6" onclick="insert('6')">6</button>
+            <button class="button button-action" value="-" onclick="insert('-')">-</button>
+
+            <button class="button button-number" value="7" onclick="insert('7')">7</button>
+            <button class="button button-number" value="8" onclick="insert('8')">8</button>
+            <button class="button button-number" value="9" onclick="insert('9')">9</button>
+            <button class="button button-action" value="+" onclick="insert('+')">+</button>
+
+            <button class="button button-number" value="0" onclick="insert('0')">0</button>
+            <button class="button button-action" onclick="reset()">AC</button>
+            <button class="button button-action" value="." onclick="insert('.')">.</button>
+            <button class="button button-action" value="=" onclick="solve()">=</button>
+        </div>
+
+        <div class="history">
+            <span>History:</p>
+            <div id="history"></div>
+        </div>
+
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
